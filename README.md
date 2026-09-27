@@ -22,6 +22,8 @@
 
 本地验证环境为 **Windows、Python 3.13**。建议使用独立虚拟环境。其他操作系统尚未做桌面验证。
 
+### Windows
+
 在仓库目录的 PowerShell 中运行：
 
 ```powershell
@@ -40,7 +42,72 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 ```
 
-`requirements.txt` 与 `requirements-dev.txt` 固定直接依赖版本；`requirements-lock.txt` 记录本次独立环境的完整依赖版本。需要复现验证环境时安装 `-r requirements-lock.txt`，CI 也使用该文件。
+`requirements.txt` 与 `requirements-dev.txt` 固定直接依赖版本；`requirements-lock.txt` 记录本次 Windows 独立环境的完整依赖版本。需要复现该验证环境时安装 `-r requirements-lock.txt`，Windows CI 也使用该文件。
+
+### macOS（Mac）
+
+Mac 可以按以下方式从 Python 源码启动。**目前没有在 Mac 上实测，也没有 macOS CI；以下是安装和运行步骤，不代表已验证兼容性。** 当前 PySide6 6.11.2 提供 macOS 13 及以上的 Intel / Apple Silicon 安装包；更旧的系统不能直接按当前依赖版本安装。参见 [PySide6 安装包](https://pypi.org/project/PySide6/6.11.2/)。
+
+**1. 安装 Python 3.13，取得软件代码。**
+
+- 从 [Python 官网 macOS 下载页](https://www.python.org/downloads/macos/) 选择 **Python 3.13 的 macOS 64-bit universal2 installer** 并安装。该安装器适用于 Intel 与 Apple Silicon；无需安装 Windows 软件或 EXE。参见 [Python 官方 Mac 使用说明](https://docs.python.org/3.13/using/mac.html)。
+- 本仓库是私有仓库：先接受仓库邀请并登录 GitHub，再打开仓库页面，点击 **Code → Download ZIP**，解压到自己的文件夹。已使用 Git 的用户也可以通过自己的 GitHub 身份克隆仓库。
+- 打开 macOS 的 **终端（Terminal）**，检查 Python：
+
+```bash
+python3.13 --version
+```
+
+应显示 `Python 3.13.x`。如果提示 `command not found`，先关闭并重新打开终端；仍找不到时检查 Python 3.13 是否安装成功。
+
+**2. 在终端进入解压后的软件目录。**
+
+例如，下载文件位于默认“下载”目录，解压后的文件夹名为 `WaveSimulator-main`：
+
+```bash
+cd ~/Downloads/WaveSimulator-main
+ls README.md requirements.txt run_wave_lab.py
+```
+
+若放在别处，请替换 `cd` 后的路径；有空格的路径需要加引号。也可以在终端输入 `cd `（末尾留一个空格），把 Finder 中的软件文件夹拖入终端，再按回车。`ls` 应能列出这三个文件，不能在 ZIP 内或错误的上级目录执行后续命令。
+
+**3. 首次安装依赖并启动。**
+
+```bash
+python3.13 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python run_wave_lab.py
+```
+
+这会在当前软件文件夹创建 Mac 自己的虚拟环境并打开桌面窗口。**不要从 Windows 复制 `.venv`，也不要使用 `.venv/Scripts/python.exe` 或双击 `Start_Wave_Lab.cmd`；Mac 的解释器路径是 `.venv/bin/python`。** 上述步骤无需激活环境或使用 `sudo pip`，也不需要手动另装 Qt。
+
+**4. 以后再次启动。**
+
+进入同一个软件目录后，只需：
+
+```bash
+.venv/bin/python run_wave_lab.py
+```
+
+不需要每次创建环境或重新安装依赖。软件打开后，按下面“第一次使用”的步骤计算波场、播放、移动接收器和反演即可。目前没有提供可双击运行的 Mac `.app` 安装包。
+
+**可选：在 Mac 上运行测试或导出 GIF。**
+
+```bash
+.venv/bin/python -m pip install -r requirements-dev.txt
+mkdir -p tmp
+.venv/bin/python -m pytest tests -q -p no:cacheprovider --basetemp=tmp/pytest_mac
+```
+
+运行 `scripts/` 中的复现或 GIF 导出脚本时，同样用 `.venv/bin/python` 替换示例中的 `python`。测试使用 Qt offscreen，Windows 专用样式的检查在该样式不可用时会跳过；测试通过也不能替代 Mac 原生窗口的操作检查。
+
+**常见情况：**
+
+- `No module named ...`：确认用的是 `.venv/bin/python`，并用同一个解释器重新执行依赖安装命令。
+- 找不到 `requirements.txt` 或 `run_wave_lab.py`：检查终端是否位于解压后的软件根目录。
+- `No matching distribution found`：核对 Python 版本、macOS 版本和 pip 输出中的具体包名；不要通过删除依赖版本限制来掩盖兼容问题。
+- 字体或控件尺寸与截图不同：当前界面优先指定 Windows 字体，Mac 可能使用替代字体，显示效果尚待实测。若出现缺字、按钮遮挡或启动错误，请保留终端报错，并记录 macOS 版本及 Intel / Apple 芯片类型。
 
 ## 第一次使用
 
