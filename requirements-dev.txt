@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==9.1.1
+matplotlib==3.11.1
+pillow==12.3.0

@@ -1,0 +1,631 @@
+{
+  "platform": "windows",
+  "style": "windows11",
+  "device_pixel_ratio": 1.5,
+  "checks": [
+    {
+      "control": "coverage_factor",
+      "direction": "up",
+      "before": 1.5,
+      "after": 1.6,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "coverage_factor",
+      "direction": "down",
+      "before": 1.6,
+      "after": 1.5,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "x_min",
+      "direction": "up",
+      "before": -2.0,
+      "after": -1.5,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "x_min",
+      "direction": "down",
+      "before": -1.5,
+      "after": -2.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "width",
+      "direction": "up",
+      "before": 7.15,
+      "after": 7.65,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "width",
+      "direction": "down",
+      "before": 7.65,
+      "after": 7.15,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "y_min",
+      "direction": "up",
+      "before": -2.0,
+      "after": -1.5,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "y_min",
+      "direction": "down",
+      "before": -1.5,
+      "after": -2.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "depth",
+      "direction": "up",
+      "before": 4.0,
+      "after": 4.5,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "depth",
+      "direction": "down",
+      "before": 4.5,
+      "after": 4.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "spacing",
+      "direction": "up",
+      "before": 0.025,
+      "after": 0.03,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "spacing",
+      "direction": "down",
+      "before": 0.03,
+      "after": 0.025,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "c1",
+      "direction": "up",
+      "before": 1.0,
+      "after": 1.1,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "c1",
+      "direction": "down",
+      "before": 1.1,
+      "after": 1.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "c2",
+      "direction": "up",
+      "before": 2.0,
+      "after": 2.1,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "c2",
+      "direction": "down",
+      "before": 2.1,
+      "after": 2.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "interface_depth",
+      "direction": "up",
+      "before": 1.0,
+      "after": 1.05,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "interface_depth",
+      "direction": "down",
+      "before": 1.05,
+      "after": 1.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "frequency",
+      "direction": "up",
+      "before": 3.0,
+      "after": 3.5,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "frequency",
+      "direction": "down",
+      "before": 3.5,
+      "after": 3.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "duration",
+      "direction": "up",
+      "before": 7.0,
+      "after": 7.5,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "duration",
+      "direction": "down",
+      "before": 7.5,
+      "after": 7.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "sponge_width",
+      "direction": "up",
+      "before": 0.8,
+      "after": 0.9,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "sponge_width",
+      "direction": "down",
+      "before": 0.9,
+      "after": 0.8,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "sponge_strength",
+      "direction": "up",
+      "before": 4.0,
+      "after": 5.0,
+      "button_rect": [
+        148,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "sponge_strength",
+      "direction": "down",
+      "before": 5.0,
+      "after": 4.0,
+      "button_rect": [
+        148,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "threshold",
+      "direction": "up",
+      "before": 0.0001,
+      "after": 0.00011,
+      "button_rect": [
+        144,
+        0,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "threshold",
+      "direction": "down",
+      "before": 0.00011,
+      "after": 0.0001,
+      "button_rect": [
+        144,
+        17,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "noise_std",
+      "direction": "up",
+      "before": 2e-05,
+      "after": 3e-05,
+      "button_rect": [
+        144,
+        0,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "noise_std",
+      "direction": "down",
+      "before": 3e-05,
+      "after": 2e-05,
+      "button_rect": [
+        144,
+        17,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "noise_seed",
+      "direction": "up",
+      "before": 6730,
+      "after": 6731,
+      "button_rect": [
+        148,
+        0,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "noise_seed",
+      "direction": "down",
+      "before": 6731,
+      "after": 6730,
+      "button_rect": [
+        148,
+        17,
+        27,
+        17
+      ]
+    },
+    {
+      "control": "receiver_1",
+      "direction": "up",
+      "before": 0.5,
+      "after": 0.55,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_1",
+      "direction": "down",
+      "before": 0.55,
+      "after": 0.5,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_2",
+      "direction": "up",
+      "before": 1.0,
+      "after": 1.05,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_2",
+      "direction": "down",
+      "before": 1.05,
+      "after": 1.0,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_3",
+      "direction": "up",
+      "before": 2.0,
+      "after": 2.05,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_3",
+      "direction": "down",
+      "before": 2.05,
+      "after": 2.0,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_4",
+      "direction": "up",
+      "before": 3.0,
+      "after": 3.05,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_4",
+      "direction": "down",
+      "before": 3.05,
+      "after": 3.0,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_5",
+      "direction": "up",
+      "before": 4.5,
+      "after": 4.55,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_5",
+      "direction": "down",
+      "before": 4.55,
+      "after": 4.5,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_6",
+      "direction": "up",
+      "before": 6.0,
+      "after": 6.05,
+      "button_rect": [
+        66,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "receiver_6",
+      "direction": "down",
+      "before": 6.05,
+      "after": 6.0,
+      "button_rect": [
+        66,
+        20,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_min",
+      "direction": "up",
+      "before": 0.1,
+      "after": 1.1,
+      "button_rect": [
+        153,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_min",
+      "direction": "down",
+      "before": 1.1,
+      "after": 0.1,
+      "button_rect": [
+        153,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_max",
+      "direction": "up",
+      "before": 100.0,
+      "after": 101.0,
+      "button_rect": [
+        153,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_max",
+      "direction": "down",
+      "before": 101.0,
+      "after": 100.0,
+      "button_rect": [
+        153,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_budget",
+      "direction": "up",
+      "before": 48,
+      "after": 49,
+      "button_rect": [
+        153,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_budget",
+      "direction": "down",
+      "before": 49,
+      "after": 48,
+      "button_rect": [
+        153,
+        19,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_tolerance",
+      "direction": "up",
+      "before": 0.0001,
+      "after": 0.0002,
+      "button_rect": [
+        153,
+        0,
+        27,
+        19
+      ]
+    },
+    {
+      "control": "inverse_tolerance",
+      "direction": "down",
+      "before": 0.0002,
+      "after": 0.0001,
+      "button_rect": [
+        153,
+        19,
+        27,
+        19
+      ]
+    }
+  ]
+}

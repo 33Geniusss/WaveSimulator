@@ -1,0 +1,12 @@
+{
+  "python": "3.13.13",
+  "platform": "Windows",
+  "machine": "AMD64",
+  "isolated_environment": true,
+  "native_gui": {
+    "platform": "windows",
+    "style": "windows11",
+    "device_pixel_ratio": 1.5,
+    "passed_clicks": 52
+  }
+}

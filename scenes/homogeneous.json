@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "coordinate_system": "x_y_depth_positive_down",
+  "simulation": {
+    "width": 7.15,
+    "depth": 4.0,
+    "x_min": -2.0,
+    "y_min": -2.0,
+    "spacing": 0.025,
+    "c1": 1.0,
+    "c2": 1.0,
+    "interface_depth": 1.0,
+    "source_x": 0.0,
+    "source_depth": 0.0,
+    "frequency": 3.0,
+    "duration": 7.0,
+    "cfl": 0.85,
+    "boundary": "sponge",
+    "sponge_width": 0.8,
+    "sponge_strength": 4.0,
+    "max_frames": 240,
+    "cache_mb": 128,
+    "auto_right": true,
+    "crossover_factor": 1.5
+  },
+  "receivers": [
+    {
+      "id": 1,
+      "x": 0.5,
+      "y": 0.0
+    },
+    {
+      "id": 2,
+      "x": 1,
+      "y": 0.0
+    },
+    {
+      "id": 3,
+      "x": 2,
+      "y": 0.0
+    },
+    {
+      "id": 4,
+      "x": 3,
+      "y": 0.0
+    },
+    {
+      "id": 5,
+      "x": 4.5,
+      "y": 0.0
+    },
+    {
+      "id": 6,
+      "x": 6,
+      "y": 0.0
+    }
+  ],
+  "arrival_threshold_au": 0.0001
+}
